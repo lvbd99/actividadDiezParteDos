@@ -1,10 +1,11 @@
 let input = document.getElementById("inputText");
-let inputValue = document.getElementById("inputText").value;
 let button = document.getElementById("buttonText");
 
 
 button.addEventListener("click", function() {
 
-localStorage.setItem("input", inputValue);
+    let inputValue = input.value;
 
-})
+    localStorage.setItem("input", inputValue);
+
+});
